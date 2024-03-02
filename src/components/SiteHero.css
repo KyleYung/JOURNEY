@@ -1,0 +1,124 @@
+.site-hero-container {
+    /*background: url('/public/images/img-home.jpg') center center/cover no-repeat; */
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    object-fit: contain;
+    align-items: center;
+}
+
+.site-hero-banner {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: fixed;
+    z-index: -1;
+}
+
+.site-hero-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: right;
+}
+
+.site-hero-container h1 {
+    color: #fff;
+    font-size: 100px;
+}
+
+.site-hero-container p {
+    margin-top: 8px;
+    color: #fff;
+    font-size: 32px;
+    text-align: center;
+}
+
+.site-hero-left {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.site-hero-right {
+    width: 50%;
+}
+
+.site-hero-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.gallery-col-small-img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.gallery-col-med-img {
+    height: auto;
+    width: 250px;
+    height: 375px;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.gallery-col-small-img:hover {
+    transform: scale(1.02);
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+.gallery-col-med-img:hover {
+    transform: scale(1.02);
+    transition: all 0.2s linear;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1280px) {
+    .site-hero-left {
+        width: 0%;
+    }
+
+    .site-hero-gallery {
+        display: none;
+    }
+
+    .site-hero-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .site-hero-text {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .gallery-col-small-img {
+        width: 225px;
+        height: 225px;
+    }
+    
+    .gallery-col-med-img {
+        height: auto;
+        width: 225px;
+        height: 340px;
+    }
+}

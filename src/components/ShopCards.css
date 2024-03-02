@@ -1,0 +1,75 @@
+.ShopCards {
+    padding: 4rem;
+    background: #fff;
+}
+
+.shop-card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1120px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.shop-card-wrapper {
+    position: relative;
+    margin: 50px 0 45px;
+}
+
+.shop-card-items {
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: row;
+}
+
+.shop-card-item {
+    display: flex;
+    flex: 1;
+    margin: 0 1rem;
+}
+
+.shop-card {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.shop-card-image {
+    display: block;
+    width: 100%;
+    width: 300px;
+    height: 100%;
+    max-height: 250px;
+    object-fit: contain;
+    transition: all 0.2s linear;
+}
+
+.shop-card-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px 30px;
+    border: 2px solid rgb(255, 108, 203);
+    border-radius: 10px 10px 10px 10px;
+}
+
+.shop-card-text {
+    color: #252e48;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.shop-card:hover {
+    transform: scale(1.02);
+    transition: 0.2s ease;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 1024px) {
+    .shop-card-items {
+        flex-direction: column;
+    }
+}
+  
